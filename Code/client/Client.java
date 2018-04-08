@@ -36,7 +36,7 @@ public class Client extends JFrame{
                 }
         
         );
-        add(userText, BorderLayout.NORTH);
+        add(userText, BorderLayout.SOUTH);
         chatWindow = new JTextArea();
         add(new JScrollPane(chatWindow), BorderLayout.CENTER);
         setSize(500,500);
