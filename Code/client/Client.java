@@ -61,7 +61,7 @@ public class Client extends JFrame{
     //connect to server
     private void connectToServer() throws IOException{
         showMessage("Attempting connection . . . \n");
-        connection = new Socket(InetAddress.getByName(serverIP), ); //To fix connection issue, place the computer with the server on it port here. That will allow the client to connect and not get lost in the data world!
+        connection = new Socket(InetAddress.getByName(serverIP), 1111); 
         showMessage("Connected to:"+ connection.getInetAddress().getHostAddress() );
         
     }
