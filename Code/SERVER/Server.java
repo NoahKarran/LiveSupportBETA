@@ -9,7 +9,7 @@ import javax.swing.*;
 public class Server extends JFrame{
     
     private JTextField userText;
-    private JTextLabel chatWindow;
+    private JTextArea chatWindow;
     private ObjectOutputStream output;
     private ObjectInputStream input;
     private ServerSocket server;
@@ -30,6 +30,7 @@ public class Server extends JFrame{
         );
         add(userText, BorderLayout.SOUTH);
         chatWindow = new JTextArea();
+        chatWindow.setEditable(false);
         add(new JScrollPane(chatWindow));
         setSize(500,500);
         setVisible(true);

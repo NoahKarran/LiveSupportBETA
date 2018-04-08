@@ -13,7 +13,7 @@ import javax.swing.*;
 public class Client extends JFrame{
     
     private JTextField userText;
-    private JTextLabel chatWindow;
+    private JTextArea chatWindow;
     private ObjectOutputStream output;
     private ObjectInputStream input;
     private String message = "";
@@ -38,6 +38,7 @@ public class Client extends JFrame{
         );
         add(userText, BorderLayout.SOUTH);
         chatWindow = new JTextArea();
+        chatWindow.setEditable(false);
         add(new JScrollPane(chatWindow), BorderLayout.CENTER);
         setSize(500,500);
         setVisible(true);
