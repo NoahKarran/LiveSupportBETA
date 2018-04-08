@@ -1,2 +1,2 @@
 # LiveSupportBETA
-This is a java made appliacation when company and comunicate with their comusters! 
+This is a java made application designed for companies to communicate with their customers! 
